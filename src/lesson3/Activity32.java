@@ -18,9 +18,5 @@ public class Activity32 {
                 System.out.print(", " + (secondfibo+firstfibo));
 
         }
-
-
-
-
     }
 }
