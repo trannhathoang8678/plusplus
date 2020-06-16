@@ -16,7 +16,6 @@ public class Activity32 {
             firstfibo += secondfibo;
             secondfibo = transfer;
                 System.out.print(", " + (secondfibo+firstfibo));
-
         }
     }
 }
