@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Activityadvance {
     String[] fibo = new String[501];
+    // Big number is a number that can over the limit of long
+    // Compare 2 big numbers
     private boolean compare(String a,String b)
     {
         if(a.length()>b.length()) return true;
@@ -17,6 +19,7 @@ public class Activityadvance {
         }
         return true;
     }
+    // Addition of two big numbers
     private String sum(String a,String b)
     {
         String res="";
@@ -40,6 +43,7 @@ public class Activityadvance {
             res=(char)(cnt+48) + res;
         return res;
     }
+    // Subtraction
     private String sub(String a,String b)
     {
         String res="";
@@ -64,6 +68,7 @@ public class Activityadvance {
             cnt++;
         return res.substring(cnt);
     }
+    // initialization
     public void init()
     {
         fibo[1]="1";
@@ -74,6 +79,7 @@ public class Activityadvance {
            // System.out.println(fibo[i]);
         }
     }
+    // Convert input to big number
     private String convert(String Binary)
     {
         String result="0";
@@ -83,6 +89,7 @@ public class Activityadvance {
                 result = sum(fibo[length-i],result);
             return result;
     }
+    // Convert big number to binary number
     private String reconvert(String x)
     {
         String res="";
