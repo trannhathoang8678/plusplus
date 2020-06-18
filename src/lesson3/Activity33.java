@@ -7,21 +7,17 @@ public class Activity33 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input a Decimal Number : ");
         long n = sc.nextLong();
-        boolean binarynumber[]= new boolean[66];
+        String s="";
         int count=0;
         while (n > 0)
         {
             count++;
             if(n%2==0)
-                binarynumber[count]=false;
+                s = '0' + s;
             else
-                 binarynumber[count]=true;
+                s= '1'+s;
             n /= 2;
         }
-        for(int i = count; i >= 1; i--)
-            if(binarynumber[i])
-                System.out.print(1);
-            else
-                System.out.print(0);
+        System.out.print(s);
     }
 }
