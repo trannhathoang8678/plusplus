@@ -2,8 +2,8 @@ package lesson4.studentmanagement;
 
 public class Student {
     private String name;
-    private int gpa;
-    public Student(String name,int gpa)
+    private float gpa;
+    public Student(String name,float gpa)
     {
         this.name = name;
         this.gpa = gpa;
@@ -12,7 +12,7 @@ public class Student {
     public String getName() {
         return name;
     }
-    public int getGpa() {
+    public float getGpa() {
         return gpa;
     }
     //setters
@@ -22,8 +22,8 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
-    // check
-    public boolean passOrFail()
+    // check if students pass of fail
+    public boolean pass()
     {
         if(gpa >= 1.5) return true;
         else return false;
