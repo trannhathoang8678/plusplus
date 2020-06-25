@@ -1,4 +1,4 @@
-package lesson4.Activity43;
+package lesson4.activity43;
 
 public class Question {
     private String content, answer1, answer2, answer3, answer4;
