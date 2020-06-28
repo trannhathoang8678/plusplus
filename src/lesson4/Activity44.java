@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.Scanner;
 
 public class Activity44 {
+    // find the biggest, 2nd biggest, smallest, 2nd smallest
     private void find(int[] array)
     {
         int ma1 = -2000000000,mi1 = 2000000000;
@@ -45,6 +46,7 @@ public class Activity44 {
         System.out.println("Maximum: " + ma1 + " Position: " + vta1 + " " + "2ndMaximum: " + ma2+ " Position: " + vta2);
         System.out.println("Minimum: " + mi1 + " Position: " + vti1 + " " + "2ndMinimum: " +mi2+ " Position: " + vti2);
     }
+    // change negative number to 0
     private void changenegative(int[] array)
     {
         for(int i = 0; i < array.length ; i++)
