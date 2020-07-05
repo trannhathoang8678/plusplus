@@ -6,24 +6,16 @@ public class Test2 {
     public static void main(String[] args) throws IOException {
         // ObjectInputStream oin = null;
         String s;
-        try( FileReader fin = new FileReader("/home/trannhathoang8678/Documents/plusplus/file/input.ttt");
+
+        s = new File("file/input.txt").getAbsolutePath();
+        try( FileReader fin = new FileReader(s);
         BufferedReader bin = new BufferedReader(fin)) {
-            int i = 0;try(FileInputStream inputStream = new FileInputStream("E://file.txt");
-                          BufferedInputStream bufferInputStream = new BufferedInputStream(inputStream)) {
-                int data = bufferInputStream.read();
-                while(data != -1) {
-                    System.out.print((char) data);
-                    data = bufferInputStream.read();
-                }
-            } catch (FileNotFoundException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-             s = bin.readLine();
-            System.out.print(s);
+            int i = 0;
+                int data ;
+                while((data=bin.read()) != -1)
+                System.out.print((char) data);
+//             s = bin.readLine();
+//            System.out.print(s);
         }
         catch (FileNotFoundException e)
         {
@@ -34,9 +26,10 @@ public class Test2 {
             System.out.println(e);
         }
 
-        FileWriter fw = new FileWriter("/home/trannhathoang8678/Documents/plusplus/file/input.txt");
+        FileWriter fw = new FileWriter("/home/trannhathoang8678/Documents/plusplus/file/output.txt",true);
         PrintWriter bu = new PrintWriter(fw);
-        bu.print("abc213");
+        bu.append('\n');
+        bu.append("abc213");
         bu.close();
         System.out.println("hello");
     }
