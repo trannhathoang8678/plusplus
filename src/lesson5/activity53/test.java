@@ -10,7 +10,9 @@ public class test {
         System.out.println("The word you want to find its meaning: ");
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
+        System.out.print("Type: ");
+        int type = sc.nextInt();
         sc.close();
-        System.out.print("Meaning: " + dictionary.find(s));
+        System.out.print("Meaning: " + dictionary.find(s,type));
     }
 }

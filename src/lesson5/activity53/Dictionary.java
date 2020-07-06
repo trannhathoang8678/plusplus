@@ -49,9 +49,9 @@ public class Dictionary {
     }
 
     // find the meanging of word
-    public String find(String s) {
+    public String find(String s,int type) {
         for (Word word : words)
-            if (word.getKey().equals(s))
+            if (word.getKey().equals(s) && word.getType() == type)
                 return word.getValue();
         return "No meaning";
     }
