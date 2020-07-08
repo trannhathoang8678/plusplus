@@ -3,8 +3,7 @@ package lesson6.activity61;
 public class FulltimeStaff extends Staff {
     private int totalWorkingDay;
     long dailySalary;
-    private String name,numberIdentification;
-    private int age;
+
     private final long MEAL_ALLOWANCE = 2000000;
     //initialization
     public FulltimeStaff(String name,int age,String numberIdentification,int totalWorkingDay,long dailySalary)

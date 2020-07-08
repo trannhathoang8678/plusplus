@@ -3,8 +3,6 @@ package lesson6.activity61;
 public class ParttimeStaff extends  Staff {
     private int totalWorkingShift;
     long baseSalary;
-    private String name,numberIdentification;
-    private int age;
     private final long MEAL_ALLOWANCE = 0;
     //initialization
     public ParttimeStaff(String name,int age,String numberIdentification,int totalWorkingShift,long baseSalary)
