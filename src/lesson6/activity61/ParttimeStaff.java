@@ -32,8 +32,5 @@ public class ParttimeStaff extends  Staff {
         return baseSalary;
     }
 
-    @Override
-    public long calculateSalary() {
-        return super.calculateSalary();
-    }
+    
 }

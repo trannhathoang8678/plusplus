@@ -33,8 +33,5 @@ public class FulltimeStaff extends Staff {
         return dailySalary;
     }
 
-    @Override
-    public long calculateSalary() {
-        return super.calculateSalary();
-    }
+
 }
